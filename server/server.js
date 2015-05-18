@@ -41,16 +41,6 @@ oauth2(app, {
   //loginPath: '/login' // The login processing url
 });
 
-/*app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-
-// Set up login/logout forms
-app.get('/login', site.loginForm);
-
-app.get('/logout', site.logout);
-app.get('/account', site.account);
-app.get('/callback', site.callbackPage);
-*/
 var auth = oauth2.authenticate({session: false, scope: 'demo'});
 app.middleware('auth:before', ['/protected', '/api', '/me', '/_internal'],
   auth);
@@ -71,12 +61,6 @@ var proxy = require('./middleware/proxy');
 var proxyOptions = require('./middleware/proxy/config.json');
 app.middleware('routes:after', proxy(proxyOptions));
 
-/*
-app.middleware('files',
-  loopback.static(path.join(__dirname, '../client/public')));
-app.middleware('files', '/admin',
-  loopback.static(path.join(__dirname, '../client/admin')));
-*/
 // Requests that get this far won't be handled
 // by any middleware. Convert them into a 404 error
 // that will be handled later down the chain.
