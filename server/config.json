@@ -1,0 +1,7 @@
+{
+  "restApiRoot": "/_internal",
+  "host": "0.0.0.0",
+  "port": 8000,
+  "https-port": 8001,
+  "url": "https://localhost:8001/"
+}

@@ -1,0 +1,16 @@
+{
+  "db": {
+    "host": "ds039487.mongolab.com",
+    "port": 39487,
+    "url": "mongodb://admin:admin@ds039487.mongolab.com:39487/scrumgular",
+    "database": "scrumgular",
+    "password": "motalandia66",
+    "name": "db",
+    "connector": "mongodb",
+    "user": "guillermocorrea"
+  },
+  "memory": {
+    "name": "memory",
+    "connector": "memory"
+  }
+}
