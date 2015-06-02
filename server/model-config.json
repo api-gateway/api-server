@@ -31,7 +31,7 @@
   },
   "Note": {
     "dataSource": "db",
-    "public": false
+    "public": true
   },
   "partida": {
     "dataSource": "db",
