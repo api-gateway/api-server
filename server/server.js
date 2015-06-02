@@ -3,9 +3,7 @@ var boot = require('loopback-boot');
 
 var http = require('http');
 var https = require('https');
-var path = require('path');
 var httpsRedirect = require('./middleware/https-redirect');
-var site = require('./site');
 var sslCert = require('./private/ssl_cert');
 
 var httpsOptions = {

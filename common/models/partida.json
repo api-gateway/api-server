@@ -1,0 +1,36 @@
+{
+  "name": "partida",
+  "plural": "partidas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idPartida": {
+      "type": "string"
+    },
+    "strSubPartida": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "decripcion": {
+      "type": "string"
+    },
+    "codigoPais": {
+      "type": "string"
+    },
+    "codigoPartida": {
+      "type": "string"
+    },
+    "codigoSubPartida": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
